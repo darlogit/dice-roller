@@ -2,18 +2,22 @@ console.log("hey man");
 
 
 let rollButton = document.querySelector("#roll-button");
+
 let numberOfRolls = document.querySelector("#roller-input");
+
 let totalSpan = document.querySelector("#total");
+
 let showAllRollsButton = document.querySelector("#show-all-rolls");
+
 let allRolls = document.querySelector("#all-rolls");
 
 
 let dieRolls = [];
 rollButton.addEventListener("click", function () {
-    let diceInput = Number(numberOfRolls.value);
+    let diceInput = Number (numberOfRolls.value);
     let index = 0;
     while (index < diceInput) {
-        dieRolls.push(Math.ceil(Math.random() * (8 - 1 + 1)));
+        dieRolls.push(Math.ceil(Math.random() * (6 - 1 + 1)));
 
         index ++;
     }
